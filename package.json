@@ -1,0 +1,32 @@
+{
+  "name": "citecheck",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --port 3117",
+    "build": "next build",
+    "start": "next start --port 3117",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:contracts": "python -m pytest tests/direct -q",
+    "contracts:build": "python scripts/build-contracts.py",
+    "contracts:lint": "genvm-lint check contracts/citecheck.py",
+    "deploy:contracts": "tsx deploy/deployScript.ts",
+    "verify:network": "tsx scripts/verify-network.ts"
+  },
+  "dependencies": {
+    "genlayer-js": "2.0.0-rc.1",
+    "lucide-react": "0.548.0",
+    "next": "16.3.8",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.9.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  }
+}

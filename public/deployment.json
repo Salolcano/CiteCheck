@@ -1,0 +1,9 @@
+{
+  "network": "Studio",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "appealWindowSeconds": 900,
+  "contract": "0x0000000000000000000000000000000000000000",
+  "transactions": {},
+  "deployedAt": null
+}
